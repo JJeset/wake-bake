@@ -108,4 +108,22 @@
 
     });
 
+
+    /// Slider gallery
+
+    const swiper = new Swiper('.gallery__slider', {
+        spaceBetween: 32,
+        slidesPerView: 4,
+
+        pagination: {
+            type: 'fraction',
+            el: '.gallery__pagination',
+        },
+
+        navigation: {
+            nextEl: '.gallery__next',
+            prevEl: '.gallery__prev',
+        },
+    });
+
 })()
