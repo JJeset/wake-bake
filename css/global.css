@@ -29,13 +29,11 @@
     padding: 140px 0;
 }
 
-.main__program {
+.main__program,
+.main__gallery {
     padding-bottom: 145px;
 }
 
-.main__gallery {
-    margin-bottom: 140px;
-}
 
 .container {
     max-width: 1310px;
