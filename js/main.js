@@ -111,7 +111,7 @@
 
     /// Slider gallery
 
-    const swiper = new Swiper('.gallery__slider', {
+    new Swiper('.gallery__slider', {
         spaceBetween: 15,
         slidesPerView: 1.5,
 
@@ -139,6 +139,26 @@
                 slidesPerView: 4
             }
         }
+    });
+
+
+    new Swiper('.testimonials__slider', {
+        spaceBetween: 0,
+        slidesPerView: 2,
+        centeredSlides: true,
+        initialSlide: 1,
+
+
+        navigation: {
+            nextEl: '.testimonials__next',
+            prevEl: '.testimonials__prev',
+        },
+
+        scrollbar: {
+            el: '.testimonials__scrollbar',
+            draggable: true,
+        }
+
     });
 
 })()
