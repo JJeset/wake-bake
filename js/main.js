@@ -144,7 +144,7 @@
 
     new Swiper('.testimonials__slider', {
         spaceBetween: 0,
-        slidesPerView: 2,
+        slidesPerView: 1,
         centeredSlides: true,
         initialSlide: 1,
 
@@ -157,6 +157,15 @@
         scrollbar: {
             el: '.testimonials__scrollbar',
             draggable: true,
+        },
+
+        breakpoints: {
+            901: {
+                slidesPerView: 1.5,
+            },
+            1201: {
+                slidesPerView: 2
+            }
         }
 
     });

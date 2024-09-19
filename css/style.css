@@ -11,6 +11,7 @@
     --general-bg: #FFF9F4;
     --accent-bg: #FFE0CB;
     --accent-color: #FFA55C;
+    --input-color: #AC907A;
     --transition: all .4s;
     --border-radius: 20px;
 }
@@ -516,6 +517,7 @@
     justify-content: space-between;
     align-items: end;
     margin-bottom: 40px;
+    gap: 30px;
 }
 
 .testimonials__info {
@@ -593,7 +595,6 @@
     padding: 30px 30px 40px;
     display: flex;
     gap: 30px;
-    max-height: 330px;
     height: auto;
     transition: var(--transition);
     opacity: 0;
@@ -662,6 +663,90 @@
 .testimonials__scrollbar .swiper-scrollbar-drag {
     background: var(--accent-color);
 }
+
+/* ===================================================== */
+
+.contact {
+    padding: 140px 0;
+    background: url("../img/decor/bg-contact.png") 50% 0% / cover no-repeat;
+}
+
+.contact__inner {
+    display: flex;
+    align-items: center;
+    gap: 84px;
+}
+
+.contact__img img {
+    padding-top: 107px;
+    width: 100%;
+    filter: drop-shadow(0px 4px 30px #c6b0a14d);
+}
+
+.contact__body {
+    max-width: 420px;
+}
+
+.contact__title {
+    margin-bottom: 20px;
+}
+
+.contact__text {
+    margin-bottom: 40px;
+}
+
+.contact__form {}
+
+.contact__label {
+    margin-bottom: 10px;
+}
+
+.contact__input {}
+
+.contact__input {
+    display: block;
+    width: 100%;
+    background: #00000000;
+    border: 1px solid var(--input-color);
+    border-radius: 100px;
+    padding: 19px 42px 19px 28px;
+    font-size: 16px;
+    transition: var(--transition);
+    margin-bottom: 20px;
+}
+
+.contact__input:hover {
+    border-color: var(--accent-color);
+}
+
+.contact__input::placeholder {
+    color: var(--input-color);
+    transition: var(--transition);
+}
+
+.contact__input:hover::placeholder {
+    color: var(--accent-color);
+}
+
+
+.contact__check-label {
+    display: flex;
+    align-items: start;
+    gap: 5px;
+    max-width: 288px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.contact__check-label a {
+    text-decoration: underline;
+    transition: var(--transition);
+}
+.contact__check-label a:hover {
+    color: var(--accent-color);
+}
+
+.contact__checkbox {}
 
 
 /* ===================================================== */
@@ -809,6 +894,13 @@
         max-width: none;
     }
 
+    /* --------------- */
+
+    .testimonials__scrollbar.swiper-scrollbar {
+        width: 50%;
+        margin: 0 auto;
+    }
+
 
 }
 
@@ -873,6 +965,17 @@
 
     .accordion-content__text {
         max-width: none;
+    }
+
+    /* ---------------- */
+
+    .testimonials__inner {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .testimonials__nav {
+        align-self: end;
     }
 
 }
@@ -965,6 +1068,18 @@
     }
 
     /* ---------------------------------- */
+
+    .testimonials__inner {
+        margin-bottom: 20px;
+    }
+
+    .testimonials__slide {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* ---------------------------------- */
     .gallery__content {
         flex-direction: column;
     }
@@ -1010,6 +1125,11 @@
 
     .accordion-content__item {
         margin-bottom: 10px;
+    }
+
+    /* ------------------- */
+    .testimonials__slide {
+        padding: 30px 10px 30px;
     }
 
 }
