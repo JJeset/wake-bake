@@ -1,6 +1,6 @@
 (function () {
 
-    // Бургер
+    // Burger menu
 
     document.addEventListener('click', burgerInit)
 
@@ -20,7 +20,7 @@
 
     }
 
-    // Модалка
+    // Modal
 
     const modal = document.querySelector('.modal')
     const modalButton = document.querySelector('.about__img-button')
@@ -44,7 +44,7 @@
 
     }
 
-    // Табы
+    // Tabs
 
     const tabControls = document.querySelector('.tab-conrols')
 
@@ -75,7 +75,7 @@
 
     }
 
-    // Аккордеон
+    // Accordion
 
     const accordionLists = document.querySelectorAll('.accordion-list');
 
