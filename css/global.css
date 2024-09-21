@@ -1,3 +1,9 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+
 .body {
     font-family: "Montserrat", "Arial", sans-serif;
     line-height: 1.5;
@@ -14,7 +20,6 @@
 }
 
 .wrapper {
-    min-height: 100%;
     width: 100%;
     overflow: hidden;
     display: flex;
